@@ -1,0 +1,113 @@
+
+# ==========================================
+# PYTHON / FASTAPI BACKEND
+# ==========================================
+
+# Virtual environments
+myenv/
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python build files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# ==========================================
+# REACT / VITE FRONTEND
+# ==========================================
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+build/
+
+# Vite cache
+.vite/
+
+# ==========================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# DATABASE / LOCAL DATA
+# ==========================================
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Database dumps and backups
+*.dump
+*.backup
+*.bak
+
+# ==========================================
+# IDE / EDITORS
+# ==========================================
+
+.vscode/
+.idea/
+*.suo
+*.user
+*.code-workspace
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# LOGS / TEMPORARY FILES
+# ==========================================
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# ==========================================
+# JUPYTER
+# ==========================================
+
+.ipynb_checkpoints/
+
+# ==========================================
+# GENERATED FILES
+# ==========================================
+
+*.pyc
+*.pyo
+*.pyd
