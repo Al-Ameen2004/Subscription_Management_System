@@ -1,6 +1,7 @@
+
 import React from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ activePage, onNavigate }) => {
   const menuItems = [
     { name: "Overview", icon: "bi-grid" },
     { name: "Customers", icon: "bi-people" },
@@ -16,6 +17,7 @@ const Sidebar = () => {
 
   return (
     <aside className="bl-sidebar">
+
       <div className="bl-brand">
         <div className="bl-brand-icon">B</div>
         <span>brightloop</span>
@@ -28,8 +30,12 @@ const Sidebar = () => {
           <a
             href="#"
             key={item.name}
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate(item.name);
+            }}
             className={`bl-nav-item ${
-              item.name === "Overview" ? "active" : ""
+              activePage === item.name ? "active" : ""
             }`}
           >
             <i className={`bi ${item.icon}`}></i>
@@ -40,12 +46,15 @@ const Sidebar = () => {
 
       <div className="bl-sidebar-footer">
         <div className="bl-avatar">N</div>
+
         <div>
           <div className="bl-user-name">Admin User</div>
           <div className="bl-user-role">Administrator</div>
         </div>
+
         <i className="bi bi-three-dots ms-auto"></i>
       </div>
+
     </aside>
   );
 };
